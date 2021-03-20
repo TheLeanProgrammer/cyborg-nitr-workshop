@@ -86,7 +86,7 @@ useEffect(() => {
 
 Different cases of dependency array
 
-1. [] - Empty array
+### 1. `[]` - Empty array
 
 Runs at the initial render only!
 
@@ -96,7 +96,7 @@ useEffect(() => {
 }, []);
 ```
 
-2. Array with some data - [data]
+### 2. Array with some data - `[data]`
 
 - runs at initial render
 - runs whenever `data` changes
@@ -108,7 +108,7 @@ useEffect(() => {
 }, [data]);
 ```
 
-3. Nothing...
+### 3. Nothing...
 
 - Runs at initial render
 - Runs at every re-render
