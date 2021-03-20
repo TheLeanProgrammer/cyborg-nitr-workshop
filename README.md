@@ -71,3 +71,50 @@ Let's you use state in functional components
 ```ts
 const [ state, setState ] = useState<StateSchema>(initialState)
 ```
+
+## useEffect hook
+
+Similar to lifecycle methods, but different :D
+
+```js
+useEffect(() => {
+  // Method you wish to run
+}, [dependencyArray]);
+```
+
+## useEffect dependency array
+
+Different cases of dependency array
+
+1. [] - Empty array
+
+Runs at the initial render only!
+
+```js
+useEffect(() => {
+  console.log ("This will run at initial render of the component only")
+}, []);
+```
+
+2. Array with some data - [data]
+
+- runs at initial render
+- runs whenever `data` changes
+
+```js
+useEffect(() => {
+  console.log ("This will run at initial render")
+  console.log (`This will also run when data - ${data} - changes`);
+}, [data]);
+```
+
+3. Nothing...
+
+- Runs at initial render
+- Runs at every re-render
+
+```js
+useEffect(() => {
+  console.log ("This is going to run initially + everytime when anything changes");
+});
+```
