@@ -58,8 +58,16 @@ Let's build a counter app!
 
 ## React Lifecycle Methods
 
-<img src="./lifecycle.png" alt="react hooks" width="600px" />
+<img src="./lifecycle.png" alt="react hooks" width="800px" />
 
 ## React Hooks
 
-<img src="./reactHooks.png" alt="react hooks" width="600px" />
+<img src="./reactHooks.png" alt="react hooks" width="800px" />
+
+## useState hook
+
+Let's you use state in functional components
+
+```ts
+const [ state, setState ] = useState<StateSchema>(initialState)
+```
